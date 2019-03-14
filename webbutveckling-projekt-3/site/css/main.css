@@ -15,7 +15,7 @@ header{
 .subheader{
     display: flex;
     position: sticky;
-    top: 0;
+    top: 5px;
 }
 
 .burger_menu{
