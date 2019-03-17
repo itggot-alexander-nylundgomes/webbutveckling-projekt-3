@@ -19,10 +19,22 @@
             
         <div class="subheader">
                 
-            <div class="burger_menu">
-                    <i class="material-icons icons">menu</i>
+            <div class="burger_menu" >
+                <div class="filler">
+                    <i class="material-icons icons menu" onclick="a_menu()">menu</i>
             </div>
-               
+            <div class="menu_nav">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="products.html">
+                    Products
+                </a>
+                <a class="weakest_link" href="about.html">
+                    About Us
+                </a>
+            </div>
+        </div>
             <div class="shopping_cart">
                     <i class="material-icons icons cart">shopping_cart</i>
             </div>
@@ -31,7 +43,7 @@
 
            <main>
                <div class="first_page_img"></div>
-                    <div class="first_page_main">
+                    <div class="first_page_main" id="products">
                        
                         <div class="buy_box" >
                             <div class="cart_box">
@@ -98,5 +110,5 @@
     </div>
 </body>
 <script src="../js/main.js"></script>
+<script src="../../../product_window.js"></script>
 </html>
-
