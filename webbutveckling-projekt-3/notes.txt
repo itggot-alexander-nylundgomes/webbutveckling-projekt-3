@@ -9,3 +9,5 @@ margin-top: 5px;
 
     about:
     bild på framsida: photo by Adam Birkett on Unsplash
+
+    glöm ej att sätta float istället för massa annan bullshit
