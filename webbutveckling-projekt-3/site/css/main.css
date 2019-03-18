@@ -1,81 +1,115 @@
 /* PLEASE BROWSER STOP MESSING WITH ME :C */
-body{
+html, body{
     margin: 0;
+}
+
+.wrapper{
+    height: 100vh;
 }
 
 /* HEADER STUFF */
 
 header{
     background-color: #DA6473;
-    border-bottom: solid 2px #9F4551;
-    height: 50px;
+    border-bottom: solid 2px white;
+    height: 55px;
+    box-shadow: 0px 0px 56px -12px rgba(255,255,255,1);
 }
 
 
 .subheader{
     position: sticky;
     top: 10px;
-    height: 60px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 100;
 }
 
 .burger_menu{
-    height: 300px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
+    margin: 13px 0 13px 0;
+    background-color: #DA6473;
+    border-bottom: 2px solid white; 
+    border-right: 2px solid white; 
+    border-top: 2px solid white;
+    border-radius: 0 10px 10px 0; 
     position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    grid-template-rows: 50px 1fr;
-    left: -150px;
-    transition: 0.6s;
-    margin: 3px 0 3px 0;
+    left: 0px;
+    transition: 0.5s;
+
 }
 
-.a_menu{
-    left: 0;
+.a_burger_menu{
+    left: 150px;
 }
 
 .shopping_cart{
-    height: 40px;
-    width: 40px;
+    height: 54px;
+    width: 50px;
     position: absolute; 
     right: 0px;
-    margin-top: 5px;
+    margin: 13px 0 13px 0;
 }
 
-.filler{
-    grid-column: span 2;
-    height: 100%;
+.menu_body{
     background-color: #DA6473;
-    border-bottom: 2px solid #9F4551; 
-    border-right: 2px solid #9F4551; 
-    border-top: 2px solid #9F4551;
-    border-radius: 0 10px 10px 0; 
-}
-
-.menu_nav{
-    grid-column: span 1;
-    background-color: #DA6473;
-    height: 248px;
+    height: 250px;
+    width: 150px;
     position: relative;
-    bottom: -2px;
-    border-bottom: 2px solid #9F4551; 
-    border-right: 2px solid #9F4551;
-    border-radius: 0 0 10px 0;
+    border-bottom: 2px solid white; 
+    border-top: 2px solid white;
+    bottom: 2px;
+    left: -150px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    border-radius: 0 0 10px 0; 
 }
 
+.border_filler{
+    background-color: #DA6473;
+    border-right: 2px solid white;
+    grid-row-start: 2;
+    border-radius: 0 0 10px 0;
+}
 
-/* ICONS AND TEXT */
+.first_page_img{
+    background-image: url(../psd/fronstidehm.jpg);
+    height: 250px;
+    position: relative;
+    top: -80px;
+    width: 100%;
+    z-index: -10;
+    box-shadow: 0px 11px 50px 5px rgba(160,155,41,0.5);
+}
 
-a{
+/* ICONS, LINKS AND TEXT */
+
+.shopping_cart_link{
+    text-decoration: none;
+}
+
+.image_text{
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 0;
+    top: 100px;
+    font-size: 2.3em;
+    text-shadow: -5px 7px 4px rgba(255, 255, 255, 1);
+    font-style: italic;
+}
+
+.menu_text{
     color: white;
     font-size: 2em;
-    text-decoration: none;
+    text-decoration: none !important;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid white;
+    height: 60px;
 }
 
 .weakest_link{
@@ -83,13 +117,27 @@ a{
 }
 
 .Name{
+    position: relative;
     color: white;
-    margin: 0 0 0 20px;
+    margin: 0;
+    top: 7px;
+    left: 20px;
+    width: 60px;
 }
 
 .cart{
     color: #DA6473 !important;
     font-size: 3rem !important;
+    position: relative;
+    left: 3px;
+    top: 2px;
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, 
+    rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, 
+    rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, 
+    rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, 
+    rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, 
+    rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, 
+    rgb(255, 255, 255) 1.92034px -0.558831px 0px;
 }
 
 .menu{
@@ -104,6 +152,15 @@ i.icons{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
+
+.first_section_text{
+    font-size: 1.5em;
+    color: white;
+    position: relative;
+    left: -50px;
+
 }
 
 i.carticons{
@@ -111,6 +168,7 @@ i.carticons{
     font-size: 2.2rem;
     position: relative;
     left: 75%;
+    margin-top: 2px;
 }
 
 .price_text{
@@ -129,30 +187,36 @@ i.carticons{
 
 main{
     height: 100vh;
-    width: 98%;
-    margin-left: 1%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    position: relative;
+    top: -60px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .first_page_main{
     margin-top: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    grid-row-gap: 13px;
-    grid-column-gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
 }
 
-.first_page_img{
-    background-color: gray;
+.first_section{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #DA6473;
 }
+
 
 /* PRODUCT WINDOWS */
 
 .buy_box{
+    flex: 0 0 auto;
     height: 219px;
     width: 148px;
     margin: auto;
@@ -164,6 +228,8 @@ main{
     "img"
     "cart"
     "price"
+    ;
+    margin: 0 5px 0 5px;
 }
 
 .cart_box{
