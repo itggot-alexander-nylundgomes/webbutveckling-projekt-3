@@ -1,4 +1,5 @@
 function a_menu(){
-    activate = document.querySelector(".burger_menu")
-    activate.classList.toggle("a_menu")
+    burger_menu = document.querySelector(".burger_menu")
+    burger_menu.classList.toggle("a_burger_menu")
+
 } 
