@@ -14,6 +14,8 @@ header{
     border-bottom: solid 2px white;
     height: 55px;
     box-shadow: 0px 0px 56px -12px rgba(255,255,255,1);
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
 }
 
 
@@ -84,6 +86,10 @@ header{
     box-shadow: 0px 11px 50px 5px rgba(160,155,41,0.5);
 }
 
+.subheader_for_pay_site{
+    height: 80px;
+}
+
 /* ICONS, LINKS AND TEXT */
 
 .shopping_cart_link{
@@ -117,12 +123,13 @@ header{
 }
 
 .Name{
-    position: relative;
     color: white;
     margin: 0;
-    top: 7px;
-    left: 20px;
-    width: 60px;
+    grid-column-start: 2;
+    position: relative;
+    top: 5px; 
+    display: flex;
+    justify-content: center;
 }
 
 .cart{
@@ -155,12 +162,16 @@ i.icons{
     margin: 0;
 }
 
-.first_section_text{
-    font-size: 1.5em;
+.section_text{
+    font-size: 1.2em;
     color: white;
     position: relative;
-    left: -50px;
+    right: 75px;
+    bottom: 10px;
+}
 
+.socks{
+    right: 58px;
 }
 
 i.carticons{
@@ -183,6 +194,31 @@ i.carticons{
     margin: 0;
 }
 
+.pay_cart{
+    font-size: 4.5em !important;
+    float: left;
+}
+
+.subheader_text{
+    margin: 0;
+    font-size: 1.5em;
+    float: right;
+    position: relative;
+    top: 50px;
+    color: #DA6473;
+}
+
+i.chevron{
+    position: relative;
+    color: white;
+    font-size: 3em;
+    grid-row-start: 1;
+    height: 45px;
+    width: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /* MAIN STUFF */
 
 main{
@@ -197,7 +233,7 @@ main{
     display: none; 
 }
 
-.first_page_main{
+.page_main{
     margin-top: 10px;
     display: flex;
     flex-wrap: nowrap;
@@ -205,11 +241,23 @@ main{
     width: 100%;
 }
 
-.first_section{
+.first, .section{
     display: flex;
     justify-content: center;
     height: 50px;
     background-color: #DA6473;
+}
+
+.second{
+    margin: 10px 0 0 0;
+}
+
+.pay_site{
+    border: black 3px solid;
+    height: 100%;
+    width: 90%;
+    margin: 0 5% 0 5%;
+
 }
 
 
@@ -219,7 +267,6 @@ main{
     flex: 0 0 auto;
     height: 219px;
     width: 148px;
-    margin: auto;
     background-color: #DA6473;
     display: grid;
     grid-template-columns: 1fr;
@@ -229,7 +276,7 @@ main{
     "cart"
     "price"
     ;
-    margin: 0 5px 0 5px;
+    margin: 0 5px 0 0;
 }
 
 .cart_box{
