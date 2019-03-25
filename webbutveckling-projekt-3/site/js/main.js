@@ -30,9 +30,24 @@ function registerCartIconClick(cartIcon){
     cartIcon.addEventListener("click", cart_click)
 }
 
-function registerBuyBoxClick(product_window){
-    product_window.addEventListener("click", add_to_order)
-}
-
 cartIcons = document.querySelectorAll(".carticons")
 cartIcons.forEach(registerCartIconClick)
+
+
+
+function product_to_cart(){
+    active = document.querySelector(".product_add")
+    active.classList.toggle("product_add_a")
+
+    size_for_text = document.querySelector(".product_add_text")
+    size_for_text.classList.toggle("product_add_text_a")
+
+    text_active = document.querySelector(".product_add_text")
+    
+    if (text_active.innerHTML === "Remove From <br> Cart"){
+        text_active.innerHTML = "Add To Cart"
+    }
+    else{
+        text_active.innerHTML = "Remove From <br> Cart"
+    }
+}
