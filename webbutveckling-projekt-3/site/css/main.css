@@ -254,12 +254,16 @@ i.ath_money{
 
 /* MAIN STUFF */
 
+.products_main{
+    height: 100%;
+    background-color: antiquewhite;
+}
+
 main{
     height: 100vh;
     width: 90%;
     margin: 0 5% 0 5%;
     position: relative;
-    top: -60px;
 }
 
 ::-webkit-scrollbar { 
