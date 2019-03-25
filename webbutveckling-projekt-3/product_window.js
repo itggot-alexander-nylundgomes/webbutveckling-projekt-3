@@ -15,7 +15,7 @@ function new_product(){
     mI.id = "mI"
     textCart = document.createTextNode("add_shopping_cart");
     mI.appendChild(textCart);
-    document.getElementById("cart_box").appendChild(mI)
+    document.getElementById("cart_box").toggleChild(mI)
 
     price_box = document.createElement("div")
     price_box.classList.add("price_box")
