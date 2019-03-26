@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 </head>
 <body>
+    <div class="wrapper">
+    <header>
+                <h1 class="Name">Fire</h1>
+                <i class="material-icons chevron" onclick="goBack()">chevron_left</i>
+    </header>
     
+        <div class="image_scroll">
+            <img class="img" src="../psd/Product 3;1@300x400.jpg" alt="">
+            <img class="img" src="../psd/Product 3;2@300x400.jpg" alt="">
+            <img class="img" src="../psd/Product 3;3@300x400.jpg" alt="">
+        </div>
+        <div class="product_1_info_box">
+            <div class="text_for_products">
+                    <h1 class="price_text">Material: <h1 class="under_price_text">Bomull 100%</h1>
+                     <br class="br_for_text">
+                     <h1 class="price_text">Tyg:</h1> <h1 class="under_price_text">Jersey</h1>
+                     <br class="br_for_text">
+                     <h1 class="price_text">Skötselråd:</h1> <h1 class="under_price_text">40°C maskintvätt</h1>
+                </h1>
+            </div>
+            <div class="product_add" onclick="product_to_cart()">
+                <h1 class="product_add_text">
+                    Add To Cart
+                </h1>
+            </div>
+        </div>
+
+        <h1 class="price">
+            Pris: 1239,00kr
+        </h1>
+</div>
+    
+
 </body>
+<script src="../js/main.js"></script>
 </html>
