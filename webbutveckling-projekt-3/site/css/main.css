@@ -9,6 +9,10 @@ html, body{
 
 /* HEADER STUFF */
 
+.index{
+    display: block;
+}
+
 header{
     background-color: #DA6473;
     border-bottom: solid 2px white;
@@ -191,14 +195,30 @@ i.carticons{
     margin-top: 2px;
 }
 
+i.cart_for_product_page{
+    font-size: 6rem;
+    left: 0;
+    margin: auto;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
+    rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px,
+    rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px,
+    rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px,
+    rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    
+}
+
 .price_text{
     color: black;
     font-size: 1em;
     margin: 0;
 }
 
+.pexels_link{
+    text-decoration: underline;
+}
 a{
     text-decoration: none;
+    color: white;
 }
 .under_price_text{
     font-size: 1em;
@@ -281,6 +301,30 @@ i.ath_money{
     right: 10px;
 }
 
+h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin: 0;
+}
+p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.cred_for_img{
+    text-decoration: underline;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin: auto 0 auto 0 ;
+    display: flex;
+    justify-content: center;
+}
+
 /* MAIN STUFF */
 
 .products_main{
@@ -296,11 +340,16 @@ main{
     position: relative;
 }
 
+.about_main{
+    background-color: #DA6473;
+    height: 100vh;
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
 
-.page_main{
+#main_page{
     margin-top: 10px;
     display: flex;
     flex-wrap: nowrap;
@@ -387,7 +436,7 @@ main{
 }
 /* PRODUCT WINDOWS */
 
-.buy_box{
+#buy_box{
     flex: 0 0 auto;
     height: 219px;
     width: 148px;
@@ -402,29 +451,50 @@ main{
     margin: 0 5px 0 0;
 }
 
-.buy_box:nth-child(1){
+.shirt_box:nth-child(1){
     background-image: url(../psd/Product\ 1@148x179.jpg);
 }
 
-.buy_box:nth-child(2){
+.shirt_box:nth-child(2){
     background-image: url(../psd/Product\ 2@148x179.jpg);
 }
 
-.buy_box:nth-child(3){
+.shirt_box:nth-child(3){
     background-image: url(../psd/Product\ 3@148x179.jpg);
 }
 
-.buy_box:nth-child(4){
+.shirt_box:nth-child(4){
     background-image: url(../psd/Product\ 4@148x179.jpg);
 }
 
-.buy_box:nth-child(5){
+.shirt_box:nth-child(5){
     background-image: url(../psd/Product\ 5@148x179.jpg);
 }
 
-.buy_box:nth-child(6){
+.shirt_box:nth-child(6){
     background-image: url(../psd/Product\ 6@148x179.jpg);
 }
+
+.shirt_box:nth-child(6){
+    background-image: url(../psd/Product\ 6@148x179.jpg);
+}
+
+.shoe_box:nth-child(1){
+    background-image: url(../psd/Shoe\ 1@148x179.jpg)
+}
+
+.shoe_box:nth-child(2){
+    background-image: url(../psd/Shoe\ 2@148x179.jpg)
+}
+
+.shoe_box:nth-child(3){
+    background-image: url(../psd/Shoe\ 3@148x179.jpg)
+}
+
+.shoe_box:nth-child(4){
+    background-image: url(../psd/Shoe\ 4@148x179.jpg)
+}
+
 
 
 
