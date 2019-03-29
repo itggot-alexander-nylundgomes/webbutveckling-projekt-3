@@ -729,7 +729,7 @@ header{
     background-color: #4BA9D3;
     color: #236886;
     position: relative !important;
-    left: 1250px;
+    float: right;
 }
 
 .pay_site{
