@@ -788,17 +788,14 @@ i.carticons{
     margin: 0 auto auto auto;
 }
 
-.desktop_window{
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 100px;
-    grid-template-areas: 
-    "info imgs"
-    "price price"
+.product_1_info_box{
+    width: 1300px;
+    height: 300px;
+    box-shadow: 0px 0px 29px -8px rgba(0,0,0,0.58);
 }
 
-.product_1_info_box{
-    grid-area: info;
+.cart_for_product_page{
+    font-size: 5em !important;
 }
 }
 
